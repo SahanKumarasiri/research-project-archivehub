@@ -1,0 +1,18 @@
+Flask>=2.2.2
+flask_cors
+gunicorn==19.9.0
+# xml
+bs4 
+requests
+pandas
+webdriver_manager
+selenium
+selenium_stealth
+selectolax
+parsel
+joblib
+scikit-learn
+chromedriver_py
+boto3
+rake_nltk 
+pyjwt

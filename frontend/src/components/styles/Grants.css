@@ -1,0 +1,125 @@
+.grants-text {
+  color: #fe9506;
+  font-family: "Poppins", sans-serif;
+  font-weight: 50;
+  text-transform: uppercase;
+  /* margin-top: 85px; */
+}
+
+.outer-card {
+  background-color: #03254f;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.get-notified {
+  display: flex !important;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+/* input[type="text"] {
+  display: none;
+} */
+
+.custom-datepicker {
+  width: 100%; /* Set the width to 100% or adjust as needed */
+  max-width: 100%;
+}
+
+.sub-headings {
+  color: #fe6b00;
+}
+
+.inner-card {
+  background-color: #01152ee5;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.inner-card:hover {
+  background: linear-gradient(180deg, #ffbf0b 0%, #fe6b00 100%);
+}
+
+.react-calendar .highlight {
+  outline: 2px solid red;
+  max-height: 100px;
+  font-weight: bolder;
+  background-color: cyan;
+}
+
+.react-calendar {
+  width: 400px;
+  max-width: 100%;
+  background-color: #03254f !important;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.125em;
+  border: 0 !important;
+}
+.react-calendar__tile .react-calendar__month-view__days__day {
+  color: wheat !important;
+}
+.react-calendar__navigation button {
+  color: #6f48eb;
+  min-width: 44px;
+  background: none;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+@media (max-width: 992px) {
+  .outer-card {
+    height: auto;
+  }
+}
+
+/*-------------------------------------------Grant Card Styles -------------------------------------*/
+.event-card {
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border: none;
+  border-radius: 10%;
+  position: relative;
+}
+.event-type {
+  font-size: 16px;
+}
+.event-time {
+  font-size: 13px;
+}
+.date-card {
+  width: 50px;
+  margin-top: -40px;
+  margin-left: 65%;
+  background-color: #c2c2c3;
+}
+.date-body {
+  text-align: center;
+  padding: 0.3rem 0.3rem;
+}
+.date {
+  margin-top: -5px;
+  margin-bottom: 0;
+  font-weight: 900;
+}
+.month {
+  font-weight: 300;
+}
+
+.grants-modal .ant-modal-content {
+  position: relative;
+  overflow-y: hidden;
+  /* left: 5%;
+  right: 5%; */
+  background-color: #002363 !important;
+  color: white !important;
+  background-clip: padding-box;
+  border: 1px solid var(--gray-300, #d0d5dd) !important;
+  border-radius: 8px;
+  padding: 40px 20px 40px 20px;
+  width: 100%;
+}

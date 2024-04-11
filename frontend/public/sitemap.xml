@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Profile Page -->
+  <url>
+    <loc>http://archivehub.online/profile</loc>
+    <changefreq>never</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Other Pages -->
+  <url>
+    <loc>http://archivehub.online/grants</loc>
+    <changefreq>never</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://archivehub.online/recommendations</loc>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Add more pages as needed -->
+</urlset>

@@ -1,0 +1,23 @@
+{
+  "name": "auth_be",
+  "version": "1.0.0",
+  "description": "An Collaborative Dashboard For Staff Research Profile",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kumarasiri R.D.S.R. Herath A.M.T.N. Silva H.C.M. Amani M.P.N.",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.1374.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.0",
+    "moment": "^2.29.4",
+    "nodemailer": "^6.9.3",
+    "uuid": "^9.0.0",
+    "webpack": "^5.88.2"
+  },
+  "devDependencies": {
+    "serverless-webpack": "^5.12.0"
+  }
+}

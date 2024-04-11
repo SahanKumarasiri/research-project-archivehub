@@ -1,0 +1,104 @@
+service: archivehub-auth-api-service
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  lambdaHashingVersion: 20201221
+  stage: ${file(./env.yml):stage}
+  region: ${file(./env.yml):region}
+  environment:
+    ACCESS_KEY_ID: ${file(./env.yml):aws_access_key_id}
+    SECRET_ACCESS_KEY: ${file(./env.yml):aws_secret_access_key}
+    JWT_SECRET: ${file(./env.yml):jwt_secret}
+    JWT_EXPIRE: ${file(./env.yml):jwt_expire}
+    EMAIL_SERVICE: ${file(./env.yml):email_service}
+    EMAIL_USERNAME: ${file(./env.yml):email_username}
+    EMAIL_PASSWORD: ${file(./env.yml):email_password}
+    DEV_EMAIL: ${file(./env.yml):dev_email}
+    S3_BUCKET: ${file(./env.yml):s3_bucket}
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - s3:*
+        - ses:*
+        - cognito-idp:*
+        - sqs:*
+        - "lambda:InvokeFunction"
+        - "lambda:InvokeAsync"
+      Resource: "*"
+
+plugins:
+  - serverless-webpack
+
+functions:
+  onboarding:
+    handler: src/services/userManagement/route.handle
+    events:
+      - http:
+          path: /onboarding
+          method: post
+          cors: true
+  login:
+    handler: src/services/userManagement/route.handle
+    events:
+      - http:
+          path: /login
+          method: post
+          cors: true
+  forgotPassword:
+    handler: src/services/userManagement/route.handle
+    events:
+      - http:
+          path: /forgotPassword
+          method: post
+          cors: true
+  resetPassword:
+    handler: src/services/userManagement/route.handle
+    events:
+      - http:
+          path: /resetPassword
+          method: post
+          cors: true
+  verifyAccount:
+    handler: src/services/userManagement/route.handle
+    events:
+      - http:
+          path: /verifyAccount
+          method: post
+          cors: true
+  deleteOrVerifyUser:
+    handler: src/services/userManagement/route.handle
+    events:
+      - http:
+          path: /deleteOrVerifyUser
+          method: put
+          cors: true
+
+resources: # CloudFormation template syntax from here on.
+  Resources:
+    usersTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: usersTable
+        AttributeDefinitions:
+          - AttributeName: email
+            AttributeType: S
+        KeySchema:
+          - AttributeName: email
+            KeyType: HASH
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+
+custom:
+  webpack:
+    webpackConfig: "webpack.config.js" # Name of webpack configuration file
+    includeModules: false # Node modules configuration for packaging
+    packager: "npm" # Packager that will be used to package your external modules
+    excludeFiles: src/**/*.test.js # Provide a glob for files to ignore
+    concurrency: 3
+
+package:
+  individually: true
+  excludeDevDependencies: true

@@ -1,0 +1,388 @@
+.App {
+  text-align: center;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+td,
+th,
+span {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 20px;
+  background: orange;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 5px 10px #ccc;
+}
+
+.back-to-top:hover {
+  background: white;
+}
+
+.ant-spin .ant-spin-dot-item:nth-child(2) {
+  background-color: lightgreen;
+}
+
+.ant-spin .ant-spin-dot-item:nth-child(3) {
+  background-color: #fe6b00;
+}
+
+.ant-spin .ant-spin-dot-item:nth-child(4) {
+  background-color: #ffbf0b;
+}
+
+.app-modal .ant-modal-content {
+  position: relative;
+  background-color: #002363 !important;
+  color: white !important;
+  background-clip: padding-box;
+  border: 1px solid var(--gray-300, #d0d5dd) !important;
+  border-radius: 8px;
+  margin-top: 150px !important;
+}
+
+.ant-modal-confirm-title {
+  color: #fe6b00 !important;
+}
+
+.ant-modal-confirm-content {
+  color: white !important;
+}
+
+.ant-modal-confirm-btns {
+  text-align: center !important;
+}
+.ant-btn-primary {
+  background-color: #ffbf0b !important;
+}
+
+.ant-rate-star.ant-rate-star-full,
+.ant-rate-star.ant-rate-star-zero,
+.ant-rate-star.ant-rate-star-half.ant-rate-star-active {
+  transition: transform 0s;
+}
+
+.ant-rate-star.ant-rate-star-half.ant-rate-star-active:hover {
+  transform: scale(0.91);
+}
+
+.ant-rate-star.ant-rate-star-full:hover {
+  transform: scale(0.91);
+}
+
+.ant-rate-star.ant-rate-star-zero:hover {
+  transform: scale(0.91);
+}
+
+.ant-table-wrapper .ant-table {
+  background: #eee2c1 !important;
+}
+
+.ant-table-wrapper .ant-table-thead > tr > th {
+  background: linear-gradient(180deg, #ffbf0b 0%, #fe6b00 100%);
+  color: white !important;
+}
+
+.ant-pagination .ant-pagination-item-active {
+  font-weight: 600;
+  background-color: #ffbf0b;
+  border-color: #1677ff;
+  color: white;
+}
+
+.ant-pagination .ant-pagination-item {
+  display: inline-block;
+  min-width: 32px;
+  height: 32px;
+  margin-inline-end: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  list-style: none;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  outline: 0;
+  cursor: pointer;
+  user-select: none;
+  color: white;
+}
+
+.ant-pagination
+  .ant-pagination-jump-next
+  .ant-pagination-item-container
+  .ant-pagination-item-ellipsis {
+  position: absolute;
+  top: 0;
+  inset-inline-end: 0;
+  bottom: 0;
+  inset-inline-start: 0;
+  display: block;
+  margin: auto;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+  text-indent: 0.13em;
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+.ant-pagination .ant-pagination-disabled .ant-pagination-item-link {
+  color: white;
+  cursor: not-allowed;
+}
+
+.ant-pagination-item-link {
+  font-family: Arial, Helvetica, sans-serif;
+  outline: 0;
+  color: white !important;
+}
+
+.ant-empty .ant-empty-description {
+  color: white;
+}
+
+.ant-popover .ant-popover-inner {
+  background-color: #002363;
+  border: 1px solid var(--gray-300, #d0d5dd) !important;
+}
+
+.ant-popover .ant-popover-title {
+  color: white;
+}
+
+.ant-popover .ant-popover-inner-content {
+  color: white;
+}
+
+@media (max-width: 576px) {
+  .ant-popover {
+    left: 0% !important;
+  }
+}
+
+.rcw-widget-container {
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 70px 0 !important;
+  position: fixed;
+  right: 0;
+  z-index: 9999;
+}
+
+.rcw-launcher {
+  background-color: #002363 !important;
+}
+/* .rcw-launcher img {
+  width: 50px !important;
+} */
+.rcw-conversation-container .rcw-header {
+  background-color: #002363 !important;
+}
+
+.rcw-messages-container {
+  background-color: #0e3f71 !important;
+}
+
+.rcw-messages-container {
+  background-color: #fff;
+  /* height: 45vh !important;
+  max-height: 410px; */
+  overflow-y: scroll;
+  padding-top: 10px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.rcw-sender {
+  display: none !important;
+}
+
+.chat-lable {
+  color: white;
+}
+
+.ql-snow .ql-picker {
+  color: white !important;
+}
+
+.ql-snow .ql-stroke {
+  stroke: white !important;
+}
+
+.ql-snow .ql-picker-options {
+  background-color: #002363 !important;
+}
+
+.ql-editor {
+  background: white !important;
+  /* max-width: 370px; */
+  color: var(--gray-500, #667085);
+}
+.rcw-message {
+  margin: 10px 13px !important;
+  display: block !important;
+}
+
+.chat-button {
+  background: linear-gradient(180deg, #ffbf0b 0%, #fe6b00 100%);
+}
+
+.chat-button-text {
+  color: #03254e;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.rcw-conversation-container {
+  min-width: auto !important;
+}
+
+.ql-snow {
+  max-width: 372px;
+}
+
+.ant-upload-wrapper
+  .ant-upload-list
+  .ant-upload-list-item
+  .ant-upload-icon
+  .anticon {
+  /* color: rgba(0, 0, 0, 0.45); */
+  font-size: 14px;
+  color: yellow;
+}
+
+.ant-upload-wrapper
+  .ant-upload-list
+  .ant-upload-list-item
+  .ant-upload-list-item-name {
+  color: white;
+}
+
+.ant-upload-wrapper
+  .ant-upload-list
+  .ant-upload-list-item
+  .ant-upload-list-item-actions
+  .anticon {
+  color: red;
+}
+
+.ant-upload-wrapper
+  .ant-upload-list
+  .ant-upload-list-item
+  .ant-upload-list-item-actions
+  .anticon:hover {
+  color: red;
+}
+
+.search-icon .anticon-search {
+  color: white;
+}
+
+.search-icon-filtered .anticon-search {
+  color: #1890ff;
+}
+
+.button-text {
+  color: white;
+}
+/* .ql-editor p {
+  max-width: 339px;
+} */
+
+@media screen and (max-width: 800px) {
+  .rcw-widget-container {
+    /* height: 100%; */
+    /* height: 100vh; */
+    padding: 15px 0 63px 15px;
+    /* max-width: none; */
+    width: auto !important;
+  }
+
+  .ql-snow {
+    max-width: none !important;
+  }
+
+  /* .rcw-widget-container {
+    height: 75vh !important;
+    margin: 0;
+    max-width: none;
+    width: 94% !important;
+  } */
+
+  .rcw-launcher {
+    bottom: 0;
+    margin: 20px 23px 65px 20px !important;
+    position: fixed;
+    right: 0;
+    z-index: 9999;
+  }
+
+  .rcw-conversation-container .rcw-close-button {
+    display: none !important;
+  }
+
+  .rcw-hide-sm {
+    display: block !important;
+  }
+}
+
+.fit {
+  object-fit: cover;
+}

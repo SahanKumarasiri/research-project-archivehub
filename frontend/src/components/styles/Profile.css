@@ -1,0 +1,262 @@
+.profile-frame1 {
+  padding: 100px 20px 20px 20px;
+}
+
+.profile-outer-card {
+  border-radius: 20px;
+  height: 100%;
+  background: rgba(3, 37, 78, 0.8);
+  border-radius: 32px;
+  /* position: relative; */
+}
+
+.card2 {
+  margin-left: 30px;
+}
+
+.p-column {
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.profile-photo {
+  width: 96px;
+  height: 96px;
+  position: relative;
+}
+
+.p-name {
+  color: var(--alias-grayscale-background, #fcfcfc);
+  text-align: center;
+  font: var(--displayxs-medium, 500 24px/32px "Inter", sans-serif);
+  position: relative;
+  align-self: stretch;
+  margin-bottom: 0px;
+}
+
+.p-email {
+  color: var(--alias-grayscale-background, #fcfcfc);
+  text-align: center;
+  font: var(--textmd-regular, 400 12px/24px "Inter", sans-serif);
+  position: relative;
+  align-self: stretch;
+}
+
+.inner-card1 {
+  background: #0e3f71;
+  border-radius: 8px;
+  /* width: 304px; */
+  /* height: 42px; */
+  /* position: relative; */
+  padding: 5px 6px 5px 6px;
+  margin: 8px 5px;
+}
+
+.inner-card2 {
+  margin-top: 15px !important;
+}
+
+.inner-card1-text1 {
+  color: #ffffff;
+  /* text-align: center; */
+  font-family: 500 1px "Poppins", sans-serif;
+  position: relative;
+  margin-top: 2px;
+  margin-bottom: 3px;
+  /* padding-bottom: 20px; */
+}
+
+.inner-card1-text2 {
+  text-align: end;
+}
+
+.interest-text {
+  color: #fe6b00;
+  text-align: center;
+  font: 500 24px "Poppins", sans-serif;
+  margin-top: 20px;
+}
+
+.interest-card {
+  margin: 20px 6px 10px 6px;
+  background: #02152a;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.qualification-card {
+  margin: 20px 6px 10px 6px;
+  background: rgba(3, 37, 78, 0.8);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.qualification-text {
+  color: #ffffff;
+  text-align: center;
+  font: 500 14px "Poppins", sans-serif;
+  margin-bottom: 10px;
+}
+
+.link-text {
+  margin: 20px 6px 10px 6px;
+  text-decoration: none;
+}
+.inner-card3 {
+  background: #fe7601;
+  border-radius: 16px;
+  padding: 12px 20px 12px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.inner-card3-text1 {
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 0%;
+}
+
+.published-paper {
+  padding-top: 10px;
+}
+
+.inner-card4 {
+  background: rgba(3, 37, 78, 0.8);
+  border-radius: 32px;
+  padding: 12px 20px 12px 20px;
+}
+
+.inner-card4-text1 {
+  color: #ffffff;
+  text-align: center;
+  font: 700 24px "Inter", sans-serif;
+}
+
+.featured-text {
+  color: #fe6b00;
+  text-align: left;
+  font: 500 32px "Poppins", sans-serif;
+}
+
+.inner-card5 {
+  padding: 12px 20px 12px 20px;
+  background: rgba(3, 37, 78, 0.8);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.inner-card5:hover {
+  background: linear-gradient(180deg, #ffbf0b 0%, #fe6b00 100%);
+}
+
+.inner-card5-text1 {
+  color: #ffffff;
+  text-align: left;
+  font: 500 14px "Poppins", sans-serif;
+  margin-bottom: 0%;
+}
+
+.view-archivehub {
+  text-decoration: none;
+  /* color: #fcfcfc; */
+}
+
+.verified {
+  margin-bottom: 7px !important;
+}
+
+@media (max-width: 767.5px) {
+  .card2 {
+    margin-left: 0%;
+  }
+}
+
+@media (max-width: 767px) {
+  .profile-row {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 342.5px) {
+  .profile-frame1 {
+    padding: 140px 20px 20px 20px;
+  }
+}
+
+@media (max-width: 384px) {
+  .published-paper {
+    padding-top: 0%;
+    padding-left: 10px;
+  }
+}
+
+.profile-modal .ant-modal-content {
+  position: relative;
+  overflow-y: hidden;
+  background-color: #002363 !important;
+  color: white !important;
+  background-clip: padding-box;
+  border: 1px solid var(--gray-300, #d0d5dd) !important;
+  border-radius: 8px;
+  padding: 40px 20px 40px 20px;
+}
+
+.publication-card {
+  background: #03254e;
+  border-radius: 32px;
+  padding: 12px 20px 20px 20px;
+}
+
+.publicstion-action {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  align-self: stretch;
+  flex-shrink: 0;
+  /* position: relative; */
+  /* padding-top: 20px; */
+}
+
+.publication-outer {
+  background: #fe7601;
+  border-radius: 16px;
+  padding: 12px 20px 12px 20px;
+}
+
+.search-box .ant-input {
+  background: #ffffff;
+}
+
+.serch-in {
+  height: 100px;
+}
+
+.accept-btn {
+  float: right;
+}
+
+.reject-btn {
+  float: left;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.anticon {
+  vertical-align: 0%;
+}
